@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <notheme if="not(/html/body/div[@id='visual-portal-wrapper'])"/>
+  <theme href="/++framework++bootstrap/starter-template.html"/>
+
+  <!-- Head rules
+       ================================================================== -->
+  <xi:include href="/++framework++bootstrap/rules/head/base.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/head/theme.xml"/>
+
+  <!-- Body rules
+       ================================================================== -->
+  <xi:include href="/++framework++bootstrap/rules/body/header-inverse.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/grid.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/columns.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/lead.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/content.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/forms.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/portlets.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/edit.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/footer.xml"/>
+  <xi:include href="/++framework++bootstrap/rules/body/general.xml"/>
+
+  <!-- Place the content 
+       .................................................................. -->
+  <drop css:theme-children="body"/>
+  <before css:theme-children="body" css:content-children="body"/>
+  <after theme-children="/html/body">
+      <script src="/++framework++bootstrap/js/bootstrap.min.js"></script>
+  </after>
+  
+</rules>

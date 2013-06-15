@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <five:registerPackage package="."/>
+
+  <plone:static directory="theme" name="bootstrap" type="theme" />
+  <plone:static directory="starter" name="bootstrap-starter" type="theme" />
+  <plone:static directory="marketing-narrow" name="bootstrap-marketing-narrow" 
+                type="theme" />
+
+</configure>

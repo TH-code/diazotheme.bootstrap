@@ -1,0 +1,6 @@
+include *.md
+
+recursive-include docs *
+recursive-include diazotheme *
+
+global-exclude *pyc
