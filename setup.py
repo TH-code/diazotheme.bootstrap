@@ -23,7 +23,7 @@ setup(name='diazotheme.bootstrap',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'diazo.framework.bootstrap',
+          'diazoframework.bootstrap',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]
